@@ -179,6 +179,7 @@ public class TestBase {
 	
 	/**
 	 * 06/09/2018
+	 * 
 	 * This Method will check the element until its not clickable in given timeperiod
 	 * 
 	 * @param driver
