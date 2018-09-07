@@ -178,6 +178,8 @@ public class TestBase {
 	}
 	
 	/**
+	 * 06/09/2018
+	 * 
 	 * This Method will check the element until its not clickable in given timeperiod
 	 * 
 	 * @param driver
@@ -185,6 +187,8 @@ public class TestBase {
 	 * @param timeout
 	 * 
 	 */
+	
+	
 	
 	public void clickon(WebDriver driver,WebElement locator,int timeout  ) {
 		//Explicit Wait Implementation 
