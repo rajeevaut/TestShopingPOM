@@ -8,12 +8,15 @@ package com.qa.customlistener;
  */
 
 
+import java.io.IOException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.events.WebDriverEventListener;
 
+import com.qa.util.TestUtil;
 import com.shop.qa.base.TestBase;
 
 public class WebEventListener extends TestBase implements WebDriverEventListener {
@@ -59,8 +62,8 @@ public class WebEventListener extends TestBase implements WebDriverEventListener
 	}
 
 	public void onException(Throwable error, WebDriver driver) {
-		System.out.println("Exception occured: " + error);
-		/*try {
+		/*System.out.println("Exception occured: " + error);
+		try {
 			TestUtil.takeScreenshotAtEndOfTest();
 		} catch (IOException e) {
 			e.printStackTrace();

@@ -6,4 +6,13 @@
       <class name="com.qa.testcases.TC001_SearchProduct"/>
     </classes>
   </test> <!-- Default test -->
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.qa.testcases.TC001_SearchProduct">
+        <methods>
+          <include name="SearchProduct"/>
+        </methods>
+      </class> <!-- com.qa.testcases.TC001_SearchProduct -->
+    </classes>
+  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

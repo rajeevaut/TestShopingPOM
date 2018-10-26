@@ -1,17 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="Alibaba Test Automation Suite" verbose="1" >
+<suite name="Alibaba Test Automation Suite" parallel="tests" thread-count="1" verbose="1" >
 
 	<listeners>
 			<listener class-name="com.qa.customlistener.ExtentReportListener" />
 			<listener class-name="com.qa.customlistener.RetryTransformer"/>
+			<listener class-name="com.qa.customlistener.Listener"/>
 	</listeners>
 	
-  <test name="Alibaba Test Automation  Suite" >
-    	
-	    <classes>
-	       <class name="com.qa.testcases.TC001_SearchProduct"/>
-	     
-	    </classes>
- </test>
+	 <test name="Suite1">
+	    	<parameter name="myBrowser" value ="chrome">
+	    	 <classes>
+		       <class name="com.qa.testcases.TC001_SearchProduct"/>
+		     
+		    </classes>
+		    </parameter>
+		    
+	</test>
+
+	 <!--<test name="Suite2" >
+	    	<parameter name="myBrowser" value ="chrome">
+	    	 <classes>
+		       <class name="com.qa.testcases.TC001_SearchProduct"/>
+		     
+		    </classes>
+		    </parameter>
+		    
+	</test>-->
+
+
 </suite>
