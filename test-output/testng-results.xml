@@ -1,21 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="0" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Alibaba Test Automation Suite" duration-ms="108822" started-at="2018-09-06T04:52:58Z" finished-at="2018-09-06T04:54:47Z">
+  <suite name="Alibaba Test Automation Suite" duration-ms="0" started-at="2018-10-26T09:17:05Z" finished-at="2018-10-26T09:17:05Z">
     <groups>
     </groups>
-    <test name="Alibaba Test Automation  Suite" duration-ms="108822" started-at="2018-09-06T04:52:58Z" finished-at="2018-09-06T04:54:47Z">
-      <class name="com.qa.testcases.TC001_SearchProduct">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.testcases.TC001_SearchProduct@5700d6b1]" name="setup" is-config="true" duration-ms="45130" started-at="2018-09-06T10:22:58Z" finished-at="2018-09-06T10:23:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="SearchProduct()[pri:0, instance:com.qa.testcases.TC001_SearchProduct@5700d6b1]" name="SearchProduct" duration-ms="63665" started-at="2018-09-06T10:23:43Z" finished-at="2018-09-06T10:24:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SearchProduct -->
-      </class> <!-- com.qa.testcases.TC001_SearchProduct -->
-    </test> <!-- Alibaba Test Automation  Suite -->
   </suite> <!-- Alibaba Test Automation Suite -->
 </testng-results>

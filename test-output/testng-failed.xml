@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Alibaba Test Automation Suite]">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Alibaba Test Automation Suite]" parallel="tests">
+  <parameter name="myBrowser" value="chrome"/>
   <listeners>
     <listener class-name="com.qa.customlistener.ExtentReportListener"/>
     <listener class-name="com.qa.customlistener.RetryTransformer"/>
+    <listener class-name="com.qa.customlistener.Listener"/>
   </listeners>
-  <test name="Alibaba Test Automation  Suite">
+  <test name="Suite1">
+    <parameter name="myBrowser" value="chrome"/>
     <classes>
       <class name="com.qa.testcases.TC001_SearchProduct"/>
     </classes>
-  </test> <!-- Alibaba Test Automation  Suite -->
+  </test> <!-- Suite1 -->
 </suite> <!-- Failed suite [Alibaba Test Automation Suite] -->

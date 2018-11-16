@@ -12,13 +12,18 @@ import com.shop.qa.base.TestBase;
 
 public class SearchResultPage extends TestBase{
 
+	
 	@FindBy(xpath="//select[@class='sort-by']")
 	WebElement sortby;
+	
+	@FindBy(xpath="//div[@class='m-view-filter util-clearfix']//div[@class='view-label']")
+	WebElement productcount;
 	
 	//*********** Initilization of PageFactory
 	public SearchResultPage() {
 		PageFactory.initElements(driver, this);
 	}
+	
 	
 	public void VerifySearchResultPage(){
 		WebDriverWait wait = new WebDriverWait(driver,TestUtil.EXPLICIT_TIMEOUT);
@@ -30,6 +35,21 @@ public class SearchResultPage extends TestBase{
 			log.info("Exception Occurs"+ e.getMessage());
 			e.toString();
 		}
+	}
+	
+	
+
+	public  int TotalProduct() {
+		int products =0;
+		
+	
+		// productcountvalue = productcount.getText();
+		
+	log.info(productcount.getText());
+		
+		
+		return products;
+		
 	}
 	
 	

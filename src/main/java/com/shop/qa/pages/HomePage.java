@@ -47,12 +47,26 @@ public class HomePage extends TestBase{
 			if(searchinput.isEnabled()) {
 				
 				Actions performAct = new Actions(driver);
-				performAct.sendKeys(searchinput, itemname).build().perform();
+				try {
+					performAct.sendKeys(searchinput, itemname).build().perform();
+					System.out.println("Error NOT Occured while enetreing the text for Search Item");
+					log.info("Error NOT Occured while enetreing the text for Search Item");
+				}
+				catch(Exception e) {
+					e.printStackTrace();
+					System.out.println("Error Occured while enetreing the text for Search Item"+e);
+					log.info("Error Occured while enetreing the text for Search Item"+e);
+				}
+				
 	
 				//searchinput.sendKeys(itemname);
 				clickon(driver, searchbtn, TestUtil.EXPLICIT_TIMEOUT);
 				
 			
+			}
+			else {
+				log.info("Failed to found SearchItem Object");
+				
 			}
 		}
 			
